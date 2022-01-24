@@ -10,6 +10,7 @@ const CategorySchema = new mongoose.Schema(
     description: {
       type: String,
     },
+    books: [{type: mongoose.Schema.ObjectId, ref: 'Book'}]
   },
   { timestamps: true }
 );

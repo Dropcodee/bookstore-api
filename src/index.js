@@ -22,5 +22,5 @@ app.listen(process.env.PORT || 8080, () => {
   app.use(ErrorMiddleware);
   // db connection
   connectDB();
-  logger.info(`🚀🚀🚀 Server listing at ${process.env.PORT || 8080} 🔥🔥🔥`);
+  logger.info(`🚀🚀🚀 Server listing at ${process.env.PORT} 🔥🔥🔥`);
 });
