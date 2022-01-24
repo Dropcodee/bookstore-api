@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 const host = process.env.SERVER_HOST;
 const port = parseInt(process.env.SERVER_PORT);
 logger.info(port);
-app.listen(port, host, async () => {
+app.listen(port, async () => {
   // router setup
   routes(app);
   app.use(ErrorMiddleware);
